@@ -18,7 +18,9 @@ See: https://github.com/tensorflow/models/tree/master/research/slim/nets/mobilen
 
 2. Restore tensorflow graph from checkpoint and revise protxt:
 $ python generate_prototxt.py --factor 1.0 --image_scale 224 
+
 (for mobilenet_v2_1.0_224)
+
 revised prototxt will be generated in prototxt_mobilenet_v2/ directory.
 
 
