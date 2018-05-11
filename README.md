@@ -5,6 +5,7 @@ convert tensorflow mobilenet-v2 checkpoint to caffemodel
 ## Requirements:
 1. pycaffe
 2. tensorflow >= 1.5
+
 Clone https://github.com/tensorflow/models, and put 'models' folder in this repository
 
 
