@@ -10,21 +10,20 @@ Clone https://github.com/tensorflow/models, and put 'models' folder in this repo
 
 ## To convert tf mobilenet_v2 to caffe model:
 
-1. Prepare checkpoints of mobilenet_v2:
-$ sh download.sh mobilenet_v2_1.0_224
+### Prepare checkpoints of mobilenet_v2:
+#### $ sh download.sh mobilenet_v2_1.0_224
 
 See: https://github.com/tensorflow/models/tree/master/research/slim/nets/mobilenet
 
 
-2. Restore tensorflow graph from checkpoint and revise protxt (for mobilenet_v2_1.0_224) :
-
-$ python generate_prototxt.py --factor 1.0 --image_scale 224 
+### Restore tensorflow graph from checkpoint and revise protxt (for mobilenet_v2_1.0_224) :
+#### $ python generate_prototxt.py --factor 1.0 --image_scale 224 
 
 revised prototxt will be generated in prototxt_mobilenet_v2/ directory.
 
 
-3. Convert variables to caffe parameters:
-$ python convert_v2.py --factor 1.0 --image_scale 224
+### Convert variables to caffe parameters:
+#### $ python convert_v2.py --factor 1.0 --image_scale 224
 
 caffemodel will be generated in caffemodel_fromckpt/ directory.
 
