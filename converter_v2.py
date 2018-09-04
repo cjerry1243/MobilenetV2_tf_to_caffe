@@ -227,7 +227,7 @@ def compare_layer_output(net, layer_name, checkpoint, tensor_name, image_file):
 
     ### matching name examples:
     ##    tf: MobilenetV2/Conv/Conv2D:0, MobilenetV2/Conv/Relu6:0, MobilenetV2/Conv/BatchNorm/FusedBatchNorm:0
-    ## caffe: conv1,                     conv1/relu,               conv1/scale
+    ## caffe: conv1/sliced2,             conv1/relu,               conv1/scale
 
     def square_error(x, x_):
         return np.sum(np.square(x-x_))
