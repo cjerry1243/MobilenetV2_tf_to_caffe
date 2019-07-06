@@ -27,7 +27,7 @@ revised prototxt will be generated in prototxt_mobilenet_v2/ directory.
 
 ### Convert variables to caffe parameters:
 ```
-$ python converter_v2.py --factor 1.0 --image_scale 224
+python converter_v2.py --factor 1.0 --image_scale 224
 ```
 caffemodel will be generated in caffemodel_fromckpt/ directory.
 
